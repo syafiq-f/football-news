@@ -29,7 +29,7 @@ PRODUCTION = os.getenv('PRODUCTION', 'False').lower() == 'true'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "syafiq-faqih-footballnews.pbp.cs.ui.ac.id"]
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main'
 ]
 
 MIDDLEWARE = [
@@ -143,10 +144,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-...
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-...
 
-...
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "syafiq-faqih-footballnews.pbp.cs.ui.ac.id"]
-...
+
